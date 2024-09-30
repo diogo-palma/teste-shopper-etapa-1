@@ -11,7 +11,7 @@ export default class LLMService {
     private readonly readLLMservice: readLLMService
   ) {}
 
-  async upload(llm: LLM){
+  async upload(llm: LLM) {
     await this.validator.uploadLLM(llm);
 
     const existingReading = await this.repository.findExistingReading(
@@ -28,15 +28,15 @@ export default class LLMService {
       };
     }
     
-    const readLLM = await this.readLLMservice.createLLM(llm)
+    
+    const readLLM = await this.readLLMservice.createLLM(llm);
 
     const data = {
       ...llm,
       image_url: readLLM.image_url,
       measure_value: readLLM.measure_value,
       measure_uuid: readLLM.measure_uuid
-    }
-
+    };
 
     return this.repository.insert(data);
   }

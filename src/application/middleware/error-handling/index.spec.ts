@@ -5,7 +5,7 @@ describe("Testing ErrorHandling class", () => {
     const json = {
       json: (data: object) => {
         expect(data).toEqual({
-          code: 404,
+          statusCode: 404,
           message: 'Not found',
           status: 'error'
         });
@@ -13,8 +13,8 @@ describe("Testing ErrorHandling class", () => {
     };
 
     const res = {
-      status: (code: string) => {
-        expect(code).toBe(404);
+      status: (statusCode: string) => {
+        expect(statusCode).toBe(404);
         return json;
       }
     };
@@ -24,7 +24,7 @@ describe("Testing ErrorHandling class", () => {
 
     ErrorHandling.execute(
       {
-        code: 404,
+        statusCode: 404,
         message: 'Not found'
       },
       null,
@@ -44,8 +44,8 @@ describe("Testing ErrorHandling class", () => {
     };
 
     const res = {
-      status: (code: string) => {
-        expect(code).toBe(500);
+      status: (statusCode: string) => {
+        expect(statusCode).toBe(500);
         return json;
       }
     };
