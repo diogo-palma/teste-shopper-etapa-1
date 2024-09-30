@@ -8,7 +8,8 @@ export const LLMSchema = new Schema(
     measure_type: { type: String, enum: ["WATER", "GAS"], required: true },
     image_url: { type: String, required: true },
     measure_value: { type: Number, required: true },
-    measure_uuid: { type: String, required: true }
+    measure_uuid: { type: String, required: true },
+    confirmed_value: {type: Number}
   },
   {
     collection: 'LLM',

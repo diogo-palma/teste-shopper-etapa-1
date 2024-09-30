@@ -3,6 +3,8 @@ import LLM from '../interfaces/llm';
 export default interface LLMRepositoryInterface {
   find(query: any): Promise<any[]>;
 
+  findOne(query: any): Promise<any>;
+
   findById(id: string): Promise<any>;
 
   insert(llm: LLM): Promise<any>;
