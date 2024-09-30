@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 export default class MongoClient {
   static connect = () => {    
-    var mongoDb = "mongodb://root:root@mongo:27017";
+    var mongoDb = process.env.MONGO_URL;
     mongoose.connect(mongoDb)
     var connection = mongoose.connection;
 

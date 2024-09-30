@@ -16,6 +16,7 @@ services:
       - .:/home/node/app
     environment:
       - TZ=America/Sao_Paulo
+      - MONGO_URL=mongodb://root:root@mongo:27017
     depends_on:
       - mongo
 
