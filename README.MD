@@ -12,6 +12,11 @@ Este projeto foi criado para demonstrar um serviço de back-end que gerencia lei
 
 ## API Endpoints
 
+### Base URL
+```
+http://localhost:9000
+``` 
+
 ### 1. Upload Reading
 - **POST** `/upload`
 - **Request Body**:
@@ -98,6 +103,12 @@ Start the application:
 ``` 
 npm start
 ```
+
+## Run with docker compose:
+```
+docker compose up -d
+```
+
 
 # Running Tests
 
