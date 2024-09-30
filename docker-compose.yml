@@ -16,6 +16,8 @@ services:
       - .:/home/node/app
     environment:
       - TZ=America/Sao_Paulo
+    depends_on:
+      - mongo
 
   mongo:
     container_name: mongo
