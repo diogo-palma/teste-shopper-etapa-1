@@ -11,7 +11,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 3000:3000
+      - 9000:9000
     volumes:
       - .:/home/node/app
     environment:

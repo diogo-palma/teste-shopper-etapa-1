@@ -9,11 +9,15 @@ const mockRepository: jest.Mocked<LLMRepositoryInterface> = {
   insert: jest.fn(),
   findById: jest.fn(),
   find: jest.fn(),
+  findOne: jest.fn(),
   update: jest.fn(),
 };
 
 const mockValidator: jest.Mocked<ValidatorServiceInterface> = {
   uploadLLM: jest.fn(),
+  confirmLLM: jest.fn(),
+  listTypeLLM: jest.fn(),
+
 };
 
 const mockReadLLMService: jest.Mocked<readLLMService> = {
