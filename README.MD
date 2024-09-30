@@ -72,3 +72,37 @@ Este projeto foi criado para demonstrar um serviço de back-end que gerencia lei
         ]
     }
 ```
+# Getting Started
+## Prerequisites
+* Node.js
+* npm or yarn
+* MongoDB (or your choice of database)
+
+# Installation
+
+## Clone the repository:
+
+```
+git clone <https://github.com/diogo-palma/teste-shopper-etapa-1
+cd teste-shopper-etapa-1
+```
+
+## Install dependencies:
+
+```
+npm install
+```
+Set up your environment variables as needed (e.g., database connection strings).
+
+Start the application:
+``` 
+npm start
+```
+
+# Running Tests
+
+## Run the following command to execute the test suite:
+
+```
+npm test
+```
